@@ -1,0 +1,28 @@
+uuid: c2602a64-fd87-496d-821e-a89083e549c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.instagram.field_media_oembed_instagram
+    - media.type.instagram
+  module:
+    - media_entity_instagram
+id: media.instagram.default
+targetEntityType: media
+bundle: instagram
+mode: default
+content:
+  field_media_oembed_instagram:
+    type: instagram_embed
+    label: visually_hidden
+    settings:
+      max_width: 0
+      hidecaption: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

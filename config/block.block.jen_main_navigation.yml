@@ -1,0 +1,27 @@
+uuid: e3a0cc27-c1ac-4941-a013-1257ac0cb53c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - jen
+_core:
+  default_config_hash: q8VObtAfeErTMceNnc6ipD9j0Qpwzqsq1EZ0iDJCHYE
+id: jen_main_navigation
+theme: jen
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

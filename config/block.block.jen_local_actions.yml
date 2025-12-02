@@ -1,0 +1,20 @@
+uuid: 45b8d69d-7afc-49ed-a4be-4783cb02da7f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - jen
+_core:
+  default_config_hash: 0ggb5e2DVMGrM6vKdBW5gUsnCyD9oLUTSUJ7vxsNQSw
+id: jen_local_actions
+theme: jen
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

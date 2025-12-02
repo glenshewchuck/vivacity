@@ -1,0 +1,25 @@
+// This is the color of the main background when the light background option is selected.
+.bg-light { background-color: #E8ECFFFF !important; }
+//.text-dark { color: #000000 !important; }
+
+.bg-secondary {
+  background-image: linear-gradient($secondary, $secondary-border-subtle) !important;
+}
+
+// Don't underline the node titles in views and such.
+h2 a {
+  text-decoration: none;
+}
+// Put styles on images in the content region by default.
+.region.region-content {
+ img:not(.card-img-top) {
+   @extend .rounded;
+   @extend .shadow-lg;
+   @extend .mb-2;
+ }
+}
+
+// On slick carousels, move the dots farther down.
+.slick-dots {
+  bottom: -35px !important;
+}

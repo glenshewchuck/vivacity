@@ -1,0 +1,22 @@
+uuid: 22b0e126-65b6-4ad4-a9ba-a125c6ebf408
+langcode: en
+status: true
+dependencies:
+  theme:
+    - jen
+_core:
+  default_config_hash: Q3WOJ99wCU9P8YB_fhkY-CsYpXWZH_RxK3lWDvt7BmM
+id: jen_local_tasks
+theme: jen
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

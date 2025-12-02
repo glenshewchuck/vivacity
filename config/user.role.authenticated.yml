@@ -1,0 +1,34 @@
+uuid: e8423559-aeae-436a-8723-d5c5391a2082
+langcode: en
+status: true
+dependencies:
+  config:
+    - dashboard.dashboard.welcome
+  module:
+    - captcha
+    - coffee
+    - dashboard
+    - file
+    - fontawesome
+    - honeypot
+    - klaro
+    - media
+    - node
+    - system
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access coffee'
+  - 'access content'
+  - 'access fontawesome additional settings'
+  - 'bypass honeypot protection'
+  - 'delete own files'
+  - 'skip CAPTCHA'
+  - 'use klaro'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view welcome dashboard'

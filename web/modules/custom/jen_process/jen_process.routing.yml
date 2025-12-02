@@ -1,0 +1,7 @@
+jen_process.one:
+  path: '/jen/one'
+  defaults:
+    _title: 'Jen One'
+    _controller: '\Drupal\jen_process\Controller\JenProcessController'
+  requirements:
+    _permission: 'access content'

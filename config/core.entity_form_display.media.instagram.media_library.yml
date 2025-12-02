@@ -1,0 +1,24 @@
+uuid: 0dc8301a-d48e-4002-aac1-4678ececa777
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.instagram.field_media_oembed_instagram
+    - media.type.instagram
+id: media.instagram.media_library
+targetEntityType: media
+bundle: instagram
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_oembed_instagram: true
+  name: true
+  path: true
+  publish_on: true
+  publish_state: true
+  status: true
+  uid: true
+  unpublish_on: true
+  unpublish_state: true
