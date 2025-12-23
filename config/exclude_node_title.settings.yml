@@ -1,0 +1,24 @@
+_core:
+  default_config_hash: a_EXRfXokVSU2tHLT-BsxRL-gAyOAydZrqejaIQMWu4
+translation_sync: true
+search: false
+type: remove
+content_types:
+  blog: none
+  case_study: none
+  full_width_page: user
+  news: none
+  page: user
+  person: none
+  test: user
+content_type_modes:
+  blog: {  }
+  case_study: {  }
+  full_width_page:
+    - full
+  news: {  }
+  page:
+    - full
+  person: {  }
+  test:
+    - full

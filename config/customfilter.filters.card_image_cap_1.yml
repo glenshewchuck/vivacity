@@ -1,0 +1,23 @@
+uuid: 396cd35d-25a5-49d1-b902-acb2457d660c
+langcode: en
+status: true
+dependencies: {  }
+id: card_image_cap_1
+name: 'Card Image Cap 1'
+cache: false
+description: 'Card with an Image'
+shorttip: "Insert a card with an image, title, text and a button with. For example:\r\n<ul>\r\n<li>[card-type1:18:img:/styles/2_3_400x600_focal_point_webp/public/2025-11/IMG_0641-1004.jpg.webp?h=2eb2ea5f:title:Test Card:text:This is the card text:but:Go There;/home:classes:mb-3]</li>\r\n</ul>\r\n"
+longtip: "Insert a card with an image, title, text and a button with. For example:\r\n\r\n[card-type1:18:img:/styles/2_3_400x600_focal_point_webp/public/2025-11/IMG_0641-1004.jpg.webp?h=2eb2ea5f:title:Test Card:text:This is the card text:but:Go There;/home:classes:mb-3]\r\n"
+rules:
+  card:
+    rid: card
+    prid: ''
+    fid: card_image_cap_1
+    name: Card
+    description: '[card-type1:18:img:/styles/2_3_400x600_focal_point_webp/public/2025-11/IMG_0641-1004.jpg.webp?h=2eb2ea5f:title:Test Card:text:This is the card text:but:Go There;/home:classes:mb-3]'
+    enabled: 1
+    matches: ''
+    pattern: '#\[card-type1:(.*?):img:(.*?):style:(.*?):title:(.*?):text:(.*?):but:(.*?);(.*?):classes:(.*?)\]#i'
+    replacement: "$custom_filters = \\Drupal::service('jen_process.custom_filters');\r\n$result = $custom_filters->Card1($matches);\r\nreturn $result;"
+    code: 1
+    weight: 0

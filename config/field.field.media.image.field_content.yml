@@ -1,0 +1,26 @@
+uuid: 1d2e02cb-a587-4872-9726-dcd5dd44a2b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_content
+    - filter.format.content_format
+    - filter.format.plain_text
+    - media.type.image
+  module:
+    - text
+id: media.image.field_content
+field_name: field_content
+entity_type: media
+bundle: image
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - content_format
+    - plain_text
+field_type: text_long

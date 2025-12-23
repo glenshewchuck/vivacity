@@ -1,0 +1,21 @@
+uuid: 86e1ded3-b6f9-4d2c-a0a7-2a8c4bd44f1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - masquerade
+  theme:
+    - bootstrap5
+id: bootstrap5_masquerade
+theme: bootstrap5
+region: footer
+weight: 0
+provider: null
+plugin: masquerade
+settings:
+  id: masquerade
+  label: Masquerade
+  label_display: visible
+  provider: masquerade
+  show_unmasquerade_link: true
+visibility: {  }

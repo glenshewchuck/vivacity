@@ -7,8 +7,15 @@ dependencies:
     - node.type.test
   module:
     - content_moderation
+    - field_layout
+    - layout_discovery
     - layout_paragraphs
     - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.test.default
 targetEntityType: node
 bundle: test

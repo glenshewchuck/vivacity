@@ -1,0 +1,29 @@
+uuid: 2bc2e737-0645-4cd5-a7c2-861b75a5b3ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hero
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap5
+id: bootstrap5_views_block__hero_block_1
+theme: bootstrap5
+region: hero
+weight: 0
+provider: null
+plugin: 'views_block:hero-block_1'
+settings:
+  id: 'views_block:hero-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/full-width-page\r\n/home"

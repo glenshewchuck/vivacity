@@ -8,14 +8,20 @@ dependencies:
     - field.field.node.news.field_featured_image
     - field.field.node.news.field_tags
     - node.type.news
-    - workflows.workflow.basic_editorial
   module:
     - content_moderation
+    - field_layout
+    - layout_discovery
     - media_library
     - path
     - scheduler
     - tagify
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: k6CBL_ttH3ui-Gcc7pzSvZx40G12ByCiEY4taWZGijs
 id: node.news.default
@@ -137,9 +143,9 @@ content:
     third_party_settings: {  }
   url_redirects:
     weight: 50
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   publish_state: true
   unpublish_state: true

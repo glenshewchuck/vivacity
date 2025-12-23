@@ -10,11 +10,19 @@ dependencies:
     - field.field.node.page.layout_builder__layout
     - node.type.page
   module:
+    - content_moderation
+    - field_layout
+    - layout_discovery
     - media_library
     - path
     - scheduler
     - tagify
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: cv3vrBO5FThyOybHSBKigkVK5IOoRQ0kMGg8hkQ7Cb4
 id: node.page.default
@@ -131,6 +139,11 @@ content:
   unpublish_on:
     type: datetime_timestamp_no_default
     weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
     region: content
     settings: {  }
     third_party_settings: {  }

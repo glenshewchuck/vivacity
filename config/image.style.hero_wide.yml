@@ -1,0 +1,17 @@
+uuid: 7aae116c-d8a7-4840-82ce-3e346c46c9de
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: hero_wide
+label: 'Hero Wide'
+effects:
+  9a138894-82a9-4d6c-990a-ef5bead19212:
+    uuid: 9a138894-82a9-4d6c-990a-ef5bead19212
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 2048
+      height: 512
+      crop_type: focal_point

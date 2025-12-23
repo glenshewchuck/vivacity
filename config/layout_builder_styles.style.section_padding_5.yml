@@ -1,0 +1,12 @@
+uuid: df4274bf-2b10-4d00-bc66-2d5414bef55a
+langcode: en
+status: true
+dependencies: {  }
+id: section_padding_5
+label: 'Section Padding 5'
+classes: p-5
+type: section
+group: default
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

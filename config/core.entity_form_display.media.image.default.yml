@@ -3,11 +3,22 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.image.field_category
+    - field.field.media.image.field_content
     - field.field.media.image.field_media_image
     - image.style.media_library
     - media.type.image
   module:
+    - field_layout
     - focal_point
+    - layout_discovery
+    - tagify
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: N2Imq6kLhAPzzFt_VZQCkWItt-UfqPOkcQlyC-3yTgM
 id: media.image.default
@@ -15,6 +26,27 @@ targetEntityType: media
 bundle: image
 mode: default
 content:
+  field_category:
+    type: tagify_entity_reference_autocomplete_widget
+    weight: 102
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      placeholder: ''
+      suggestions_dropdown: 1
+      show_entity_id: 0
+      show_info_label: 0
+      info_label: ''
+    third_party_settings: {  }
+  field_content:
+    type: text_textarea
+    weight: 103
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_media_image:
     type: image_focal_point
     weight: 1

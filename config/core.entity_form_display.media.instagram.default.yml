@@ -6,8 +6,15 @@ dependencies:
     - field.field.media.instagram.field_media_oembed_instagram
     - media.type.instagram
   module:
+    - field_layout
+    - layout_discovery
     - media
     - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: media.instagram.default
 targetEntityType: media
 bundle: instagram

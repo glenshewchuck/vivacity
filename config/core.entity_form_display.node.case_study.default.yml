@@ -11,15 +11,21 @@ dependencies:
     - field.field.node.case_study.field_featured_image
     - field.field.node.case_study.field_tags
     - node.type.case_study
-    - workflows.workflow.basic_editorial
   module:
     - content_moderation
+    - field_layout
+    - layout_discovery
     - link
     - media_library
     - path
     - scheduler
     - tagify
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: DJeP4_KChF0IyCPUTJgyTMor3xxYOe7QxBVpwg6I_FQ
 id: node.case_study.default
@@ -164,9 +170,9 @@ content:
     third_party_settings: {  }
   url_redirects:
     weight: 50
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   publish_state: true
   unpublish_state: true

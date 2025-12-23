@@ -24,14 +24,16 @@ settings:
       - indent
       - outdent
       - alignment
+      - Fullscreen
       - insertTable
       - drupalMedia
-      - undo
-      - redo
       - removeFormat
       - sourceEditing
       - icon
       - bootstrapGrid
+      - fontSize
+      - fontColor
+      - showBlocks
   plugins:
     ckeditor5_alignment:
       enabled_alignments:
@@ -44,8 +46,6 @@ settings:
         - heading2
         - heading3
         - heading4
-        - heading5
-        - heading6
     ckeditor5_icons_icon:
       fa_version: '6'
       fa_styles:
@@ -65,8 +65,17 @@ settings:
     ckeditor5_style:
       styles:
         -
-          label: H3-Primary
+          label: 'H3-Primary Color'
           element: '<h3 class="bg-primary">'
+        -
+          label: 'H4 Secondary Color'
+          element: '<h4 class="text-secondary">'
+        -
+          label: 'Span Primary Color'
+          element: '<span class="text-primary">'
+        -
+          label: 'Span Secondary Color'
+          element: '<span class="text-secondary">'
     ckeditor_bs_grid_grid:
       use_cdn: true
       cdn_url: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css'
@@ -77,12 +86,6 @@ settings:
         - '4'
         - '5'
         - '6'
-        - '7'
-        - '8'
-        - '9'
-        - '10'
-        - '11'
-        - '12'
       available_breakpoints:
         - xs
         - sm
@@ -90,6 +93,21 @@ settings:
         - lg
         - xl
         - xxl
+    ckeditor_font_font:
+      supportAllSizeValues: false
+      supportAllFamilyValues: false
+      font_names: {  }
+      font_sizes:
+        -
+          title: 150%
+          model: 150%
+        -
+          title: 200%
+          model: 200%
+    ckeditor_font_font_color:
+      font_colors: "#CCCCCC|Color Gray\r\n#CC4444|Color Guess"
+      columns: 1
+      documentColors: 0
     linkit_extension:
       linkit_enabled: true
       linkit_profile: default

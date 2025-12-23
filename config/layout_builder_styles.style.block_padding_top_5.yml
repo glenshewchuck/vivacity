@@ -1,0 +1,12 @@
+uuid: 67dfb8ed-e83e-47c7-93b8-da6d41867429
+langcode: en
+status: true
+dependencies: {  }
+id: block_padding_top_5
+label: 'Block Padding Top 5'
+classes: pt-5
+type: component
+group: default
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

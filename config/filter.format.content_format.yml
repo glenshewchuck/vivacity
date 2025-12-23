@@ -18,14 +18,39 @@ dependencies:
     - core.entity_view_mode.media.medium
     - core.entity_view_mode.media.small
   module:
+    - blazy
+    - customfilter
     - linkit
     - media
+    - slick
 _core:
   default_config_hash: tjFZLkdWssWjPYjuOrXf4pJu5kPdlmqRFEkaPUEsWTM
 name: Content
 format: content_format
 weight: 0
 filters:
+  blazy_filter:
+    id: blazy_filter
+    provider: blazy
+    status: false
+    weight: 3
+    settings:
+      media_switch: ''
+      hybrid_style: ''
+      box_style: ''
+      box_media_style: ''
+      box_caption: ''
+      filter_tags:
+        img: img
+        iframe: iframe
+      use_data_uri: '0'
+  customfilter_card_image_cap_1:
+    id: customfilter_card_image_cap_1
+    provider: customfilter
+    status: true
+    weight: 0
+    settings:
+      id: card_image_cap_1
   filter_align:
     id: filter_align
     provider: filter
@@ -50,7 +75,7 @@ filters:
     status: false
     weight: -10
     settings:
-      allowed_html: '<h3 class="bg-primary">'
+      allowed_html: '<h3 class="bg-primary"> <h4 class="text-secondary"> <span class="text-primary text-secondary">'
       filter_html_help: false
       filter_html_nofollow: false
   filter_htmlcorrector:
@@ -105,3 +130,48 @@ filters:
       allowed_media_types:
         image: image
         remote_video: remote_video
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      caption:
+        alt: '0'
+        title: '0'
+      optionset: default
+      layout: ''
+      admin_uri: '/admin/config/content/formats/manage/content_format?destination=/admin/config/content/formats&ajax_form=1&_wrapper_format=drupal_ajax'
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: ''
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      style: ''
+      skin: ''
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
+      preserve_keys: false
+      visible_items: null

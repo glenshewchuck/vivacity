@@ -1,0 +1,12 @@
+uuid: 1f0b0620-4de2-4fb8-bafa-bf1e6dba55d3
+langcode: en
+status: true
+dependencies: {  }
+id: block_padding_3
+label: 'Block Padding 3'
+classes: p-3
+type: component
+group: default
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

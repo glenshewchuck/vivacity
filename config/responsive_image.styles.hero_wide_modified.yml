@@ -1,0 +1,32 @@
+uuid: 1766057d-6772-4206-bcf9-54026d070888
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.4_3_1000x750_focal_point_webp
+    - image.style.4_3_1800x1350_focal_point_webp
+    - image.style.hero_wide
+  theme:
+    - bootstrap5
+_core:
+  default_config_hash: r53rfarUKfKsYhtkVlH-z6Pj7GDn2OxaNkcH9ETAnIw
+id: hero_wide_modified
+label: 'Hero Wide Modified'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: 4_3_1000x750_focal_point_webp
+    breakpoint_id: bootstrap5.screen.sm-max
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: 4_3_1000x750_focal_point_webp
+    breakpoint_id: bootstrap5.screen.sm-max
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: 4_3_1800x1350_focal_point_webp
+    breakpoint_id: bootstrap5.screen.xs-max
+    multiplier: 2x
+breakpoint_group: bootstrap5.screen
+fallback_image_style: hero_wide

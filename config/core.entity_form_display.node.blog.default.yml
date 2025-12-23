@@ -8,14 +8,20 @@ dependencies:
     - field.field.node.blog.field_featured_image
     - field.field.node.blog.field_tags
     - node.type.blog
-    - workflows.workflow.basic_editorial
   module:
     - content_moderation
+    - field_layout
+    - layout_discovery
     - media_library
     - path
     - scheduler
     - tagify
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: hoGNoqblKw8LUx_T31z44Fd7fbcEawNacomx7uZ73jU
 id: node.blog.default
@@ -142,9 +148,9 @@ content:
     third_party_settings: {  }
   url_redirects:
     weight: 50
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   publish_state: true
   unpublish_state: true

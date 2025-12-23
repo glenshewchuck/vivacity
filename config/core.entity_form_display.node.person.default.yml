@@ -11,14 +11,20 @@ dependencies:
     - field.field.node.person.field_person__role_job_title
     - field.field.node.person.field_tags
     - node.type.person
-    - workflows.workflow.basic_editorial
   module:
     - content_moderation
+    - field_layout
+    - layout_discovery
     - media_library
     - path
     - scheduler
     - tagify
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: 47Ay2mcWHpxrxF8PZh5F-Mp2GYRX3vQAeMt2US2Unkk
 id: node.person.default
@@ -164,9 +170,9 @@ content:
     third_party_settings: {  }
   url_redirects:
     weight: 50
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   publish_state: true
   unpublish_state: true

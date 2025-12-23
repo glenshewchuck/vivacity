@@ -6,8 +6,15 @@ dependencies:
     - easy_email.easy_email_type.user_created_approval_admin
     - field.field.easy_email.user_created_approval_admin.field_related_user
   module:
+    - field_layout
     - file
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: OHtFXYg43YlhqKZii0A27uM9V19Xsa3EmlyK3WmtXAo
 id: easy_email.user_created_approval_admin.default
