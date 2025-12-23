@@ -1,0 +1,33 @@
+<?php
+
+//system-theme-settings
+
+
+function jen_process_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
+  if ($form_id !== 'system_theme_settings') {
+    return;
+  }
+
+  $form['jen_process'] = [
+    '#type' => 'details',
+    '#title' => t('Jen Custom Fields'),
+    '#description' => t("Variables used in bootstrap color and such."),
+    '#open' => FALSE,
+  ];
+
+  $form['jen_process']['jen_nav_color'] = [
+    '#type' => 'textfield',
+    '#title' => t('Overriding Nav Color'),
+    '#description' => t('Enter information in #000000 format.'),
+    '#default_value' => theme_get_setting('jen_nav_color', 'bootstrap5'),
+    //    '#default_value' => 'Default Text', // Optional
+  ];
+
+}
+
+function jen_process_preprocess_page(&$variables) {
+  // Pass variables to theme.
+  $variables['jen_nav_color'] = theme_get_setting('jen_nav_color', 'bootstrap5');
+}
+

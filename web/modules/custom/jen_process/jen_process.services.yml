@@ -1,0 +1,6 @@
+# your_module_name.services.yml
+services:
+  jen_process.custom_filters:
+    class: Drupal\jen_process\CustomFilters
+# Add arguments if your service requires dependencies
+# arguments: ['@logger.factory', '@config.factory']
