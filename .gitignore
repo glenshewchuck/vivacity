@@ -41,3 +41,6 @@ web/sites/simpletest
 
 # Ignore multi-site test environment.
 # simpletest
+
+# Added by Glen
+.idea
