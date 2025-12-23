@@ -1,35 +1,133 @@
 @import '../dist/bootstrap/5.3.8/scss/functions';
 
-// Default colors.
-$blue:    #0d6efd !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #d63384 !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #198754 !default;
-$teal:    #20c997 !default;
-$cyan:    #0dcaf0 !default;
+// Default Colors from Bootstrap.
+$blue:    #0d6efd;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red: #e65462;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
 
-// Used in the theming.
-//$primary:       $blue !default;
-$primary: tint-color($blue, 40%) !default;
-//$secondary:     $gray-600 !default;
-$secondary: rgba(249, 170, 139, 1);
-//$success:       $green !default;
-$info:          $teal !default;
-//$warning:       $yellow !default;
-//$danger:        $red !default;
-//$light:         $gray-100 !default;
-//$dark:          $gray-900 !default;
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+// scss-docs-end gray-color-variables
 
+
+// -----------------------------------------------
+// Pallet color sources:
+// -----------------------------------------------
+// https://coolors.co/d77a61-a7cced-260f26-9ece9a-6a66a3
+
+
+// -----------------------------------------------
+// Pallet #1
+// -----------------------------------------------
+$burnt-peach: #d77a61;
+$icy-blue: #a7cced;
+$midnight-violet: #260f26;
+$celadon: #9ece9a;
+$dusty-grape: #6a66a3;
+
+$color-pallet-1: (
+  'primary':      $burnt-peach,
+  'secondary':    $icy-blue,
+  'success':      $green,
+  'info':         $celadon,
+  'warning':      $dusty-grape,
+  'danger':       $red,
+  'light':        $gray-100,
+  'dark':         $gray-900,
+);
+
+// -----------------------------------------------
+// Pallet #2
+// -----------------------------------------------
+$midnight-violet: #32021fff;
+$mauve-shadow: #4b2e39ff;
+$dusty-lavender: #6c596eff;
+$slate-grey: #697b8f;
+$cool-steel: #77a0a9ff;
+
+$color-pallet-2: (
+  'primary':      $midnight-violet,
+  'secondary':    $mauve-shadow,
+  'success':      $green,
+  'info':         $slate-grey,
+  'warning':      $cool-steel,
+  'danger':       #f45151,
+  'light':        $gray-100,
+  'dark':         $gray-900,
+);
+
+
+// -----------------------------------------------
+// Pallet #3
+// -----------------------------------------------
+/* SCSS HEX */
+$sky-blue: #66c7f4ff;
+$dusty-lavender: #77567aff;
+$orchid-mist: #c47ac0ff;
+$pink-mist: #e39ec1ff;
+$cotton-rose: #debac0ff;
+
+$color-pallet-3: (
+  'primary':      $sky-blue,
+  'secondary':    $dusty-lavender,
+  'success':      $green,
+  'info':         $orchid-mist,
+  'warning':      $pink-mist,
+  'danger':       #f45151,
+  'light':        $gray-100,
+  'dark':         $gray-900,
+);
+
+
+// -----------------------------------------------
+// SET THE COLOR PALLET
+// -----------------------------------------------
+$color-pallet: $color-pallet-2;
+
+// -----------------------------------------------
+// Colors used in the theming.
+// -----------------------------------------------
+$primary:   map-get($color-pallet, "primary");
+$secondary: map-get($color-pallet, "secondary");
+$success:   map-get($color-pallet, "success");
+$info:      map-get($color-pallet, "info");
+$warning:   map-get($color-pallet, "warning");
+$danger:    map-get($color-pallet, "danger");
+$light:     map-get($color-pallet, "light");
+$dark:      map-get($color-pallet, "dark");
+
+
+// -----------------------------------------------
+// Custom nav color (like menu in the header)
+// -----------------------------------------------
+$nav-color: tint-color($blue, 90%);
+$body-emphasis-color-dark: $indigo;
+//$navbar-light-color, $navbar-light-hover-color
+
+
+// -----------------------------------------------
+// Custom Theme Colors Added.
+// -----------------------------------------------
 @import '../dist/bootstrap/5.3.8/scss/variables';
 
-// You can add colors and they will be available in the theme-colors map (i.e.buttons, etc).
 $royal-purple: #6F42C1;
-
-// Merge your custom color into the theme-colors map
 $theme-colors: map-merge(
     $theme-colors,
     (

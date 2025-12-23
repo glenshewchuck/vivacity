@@ -1,0 +1,7 @@
+// This is the header at the top of the page.
+.bg-secondary {
+  //background-image: linear-gradient(to bottom, $primary, tint-color($primary, 30%) ) !important;
+  background-image: linear-gradient(to bottom, rgba(109, 174, 105, 1), rgb(109, 174, 105, .3));
+  background-image: linear-gradient(to bottom, var(--bs-primary), var(--bs-primary-bg-subtle));
+}
+
