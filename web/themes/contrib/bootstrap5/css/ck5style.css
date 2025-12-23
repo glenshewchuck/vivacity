@@ -177,6 +177,7 @@
 }
 
 .ck-content {
+  /* SCSS HEX */
   /*!
    * Bootstrap  v5.3.8 (https://getbootstrap.com/)
    * Copyright 2011-2025 The Bootstrap Authors
@@ -310,8 +311,8 @@
   --bs-body-color-rgb: 222, 226, 230;
   --bs-body-bg: #212529;
   --bs-body-bg-rgb: 33, 37, 41;
-  --bs-emphasis-color: #fff;
-  --bs-emphasis-color-rgb: 255, 255, 255;
+  --bs-emphasis-color: #6610f2;
+  --bs-emphasis-color-rgb: 102, 16, 242;
   --bs-secondary-color: rgba(222, 226, 230, 0.75);
   --bs-secondary-color-rgb: 222, 226, 230;
   --bs-secondary-bg: #343a40;
@@ -7185,8 +7186,44 @@ a > .ck-content code {
 .ck-content .top-0 {
   top: 0 !important;
 }
+.ck-content .top-5 {
+  top: 5% !important;
+}
+.ck-content .top-10 {
+  top: 10% !important;
+}
+.ck-content .top-20 {
+  top: 20% !important;
+}
+.ck-content .top-25 {
+  top: 25% !important;
+}
+.ck-content .top-30 {
+  top: 30% !important;
+}
+.ck-content .top-40 {
+  top: 40% !important;
+}
 .ck-content .top-50 {
   top: 50% !important;
+}
+.ck-content .top-60 {
+  top: 60% !important;
+}
+.ck-content .top-70 {
+  top: 70% !important;
+}
+.ck-content .top-75 {
+  top: 75% !important;
+}
+.ck-content .top-80 {
+  top: 80% !important;
+}
+.ck-content .top-90 {
+  top: 90% !important;
+}
+.ck-content .top-95 {
+  top: 95% !important;
 }
 .ck-content .top-100 {
   top: 100% !important;
@@ -7194,8 +7231,44 @@ a > .ck-content code {
 .ck-content .bottom-0 {
   bottom: 0 !important;
 }
+.ck-content .bottom-5 {
+  bottom: 5% !important;
+}
+.ck-content .bottom-10 {
+  bottom: 10% !important;
+}
+.ck-content .bottom-20 {
+  bottom: 20% !important;
+}
+.ck-content .bottom-25 {
+  bottom: 25% !important;
+}
+.ck-content .bottom-30 {
+  bottom: 30% !important;
+}
+.ck-content .bottom-40 {
+  bottom: 40% !important;
+}
 .ck-content .bottom-50 {
   bottom: 50% !important;
+}
+.ck-content .bottom-60 {
+  bottom: 60% !important;
+}
+.ck-content .bottom-70 {
+  bottom: 70% !important;
+}
+.ck-content .bottom-75 {
+  bottom: 75% !important;
+}
+.ck-content .bottom-80 {
+  bottom: 80% !important;
+}
+.ck-content .bottom-90 {
+  bottom: 90% !important;
+}
+.ck-content .bottom-95 {
+  bottom: 95% !important;
 }
 .ck-content .bottom-100 {
   bottom: 100% !important;
@@ -7203,8 +7276,44 @@ a > .ck-content code {
 .ck-content .start-0 {
   left: 0 !important;
 }
+.ck-content .start-5 {
+  left: 5% !important;
+}
+.ck-content .start-10 {
+  left: 10% !important;
+}
+.ck-content .start-20 {
+  left: 20% !important;
+}
+.ck-content .start-25 {
+  left: 25% !important;
+}
+.ck-content .start-30 {
+  left: 30% !important;
+}
+.ck-content .start-40 {
+  left: 40% !important;
+}
 .ck-content .start-50 {
   left: 50% !important;
+}
+.ck-content .start-60 {
+  left: 60% !important;
+}
+.ck-content .start-70 {
+  left: 70% !important;
+}
+.ck-content .start-75 {
+  left: 75% !important;
+}
+.ck-content .start-80 {
+  left: 80% !important;
+}
+.ck-content .start-90 {
+  left: 90% !important;
+}
+.ck-content .start-95 {
+  left: 95% !important;
 }
 .ck-content .start-100 {
   left: 100% !important;
@@ -7212,8 +7321,44 @@ a > .ck-content code {
 .ck-content .end-0 {
   right: 0 !important;
 }
+.ck-content .end-5 {
+  right: 5% !important;
+}
+.ck-content .end-10 {
+  right: 10% !important;
+}
+.ck-content .end-20 {
+  right: 20% !important;
+}
+.ck-content .end-25 {
+  right: 25% !important;
+}
+.ck-content .end-30 {
+  right: 30% !important;
+}
+.ck-content .end-40 {
+  right: 40% !important;
+}
 .ck-content .end-50 {
   right: 50% !important;
+}
+.ck-content .end-60 {
+  right: 60% !important;
+}
+.ck-content .end-70 {
+  right: 70% !important;
+}
+.ck-content .end-75 {
+  right: 75% !important;
+}
+.ck-content .end-80 {
+  right: 80% !important;
+}
+.ck-content .end-90 {
+  right: 90% !important;
+}
+.ck-content .end-95 {
+  right: 95% !important;
 }
 .ck-content .end-100 {
   right: 100% !important;
@@ -7365,6 +7510,30 @@ a > .ck-content code {
 }
 .ck-content .w-auto {
   width: auto !important;
+}
+.ck-content .w-10 {
+  width: 10% !important;
+}
+.ck-content .w-20 {
+  width: 20% !important;
+}
+.ck-content .w-30 {
+  width: 30% !important;
+}
+.ck-content .w-40 {
+  width: 40% !important;
+}
+.ck-content .w-60 {
+  width: 60% !important;
+}
+.ck-content .w-70 {
+  width: 70% !important;
+}
+.ck-content .w-80 {
+  width: 80% !important;
+}
+.ck-content .w-90 {
+  width: 90% !important;
 }
 .ck-content .mw-100 {
   max-width: 100% !important;
@@ -11346,51 +11515,51 @@ a > .ck-content code {
 }
 .ck-content a.button.button--primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #0d6efd;
-  --bs-btn-border-color: #0d6efd;
+  --bs-btn-bg: #32021f;
+  --bs-btn-border-color: #32021f;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: rgb(11.05, 93.5, 215.05);
-  --bs-btn-hover-border-color: rgb(10.4, 88, 202.4);
-  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-hover-bg: rgb(42.5, 1.7, 26.35);
+  --bs-btn-hover-border-color: rgb(40, 1.6, 24.8);
+  --bs-btn-focus-shadow-rgb: 81, 40, 65;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: rgb(10.4, 88, 202.4);
-  --bs-btn-active-border-color: rgb(9.75, 82.5, 189.75);
+  --bs-btn-active-bg: rgb(40, 1.6, 24.8);
+  --bs-btn-active-border-color: rgb(37.5, 1.5, 23.25);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #0d6efd;
-  --bs-btn-disabled-border-color: #0d6efd;
+  --bs-btn-disabled-bg: #32021f;
+  --bs-btn-disabled-border-color: #32021f;
 }
 .ck-content a.button.button--danger {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #dc3545;
-  --bs-btn-border-color: #dc3545;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: rgb(187, 45.05, 58.65);
-  --bs-btn-hover-border-color: rgb(176, 42.4, 55.2);
-  --bs-btn-focus-shadow-rgb: 225, 83, 97;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: rgb(176, 42.4, 55.2);
-  --bs-btn-active-border-color: rgb(165, 39.75, 51.75);
+  --bs-btn-color: #000;
+  --bs-btn-bg: #f45151;
+  --bs-btn-border-color: #f45151;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: rgb(245.65, 107.1, 107.1);
+  --bs-btn-hover-border-color: rgb(245.1, 98.4, 98.4);
+  --bs-btn-focus-shadow-rgb: 207, 69, 69;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: rgb(246.2, 115.8, 115.8);
+  --bs-btn-active-border-color: rgb(245.1, 98.4, 98.4);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #dc3545;
-  --bs-btn-disabled-border-color: #dc3545;
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #f45151;
+  --bs-btn-disabled-border-color: #f45151;
 }
 .ck-content a.button.button-action {
   --bs-btn-color: #000;
-  --bs-btn-bg: #0dcaf0;
-  --bs-btn-border-color: #0dcaf0;
+  --bs-btn-bg: #697b8f;
+  --bs-btn-border-color: #697b8f;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: rgb(49.3, 209.95, 242.25);
-  --bs-btn-hover-border-color: rgb(37.2, 207.3, 241.5);
-  --bs-btn-focus-shadow-rgb: 11, 172, 204;
+  --bs-btn-hover-bg: rgb(127.5, 142.8, 159.8);
+  --bs-btn-hover-border-color: rgb(120, 136.2, 154.2);
+  --bs-btn-focus-shadow-rgb: 89, 105, 122;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: rgb(61.4, 212.6, 243);
-  --bs-btn-active-border-color: rgb(37.2, 207.3, 241.5);
+  --bs-btn-active-bg: rgb(135, 149.4, 165.4);
+  --bs-btn-active-border-color: rgb(120, 136.2, 154.2);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #0dcaf0;
-  --bs-btn-disabled-border-color: #0dcaf0;
+  --bs-btn-disabled-bg: #697b8f;
+  --bs-btn-disabled-border-color: #697b8f;
 }
 .ck-content a.button.button--small {
   --bs-btn-padding-y: 0.25rem;
@@ -11624,10 +11793,10 @@ a > .ck-content code {
   font-weight: 700;
 }
 .ck-content .paragraphs-dropdown-action.button.btn-primary {
-  background-color: #0d6efd;
+  background-color: #32021f;
 }
 .ck-content .paragraphs-dropdown-action.button.btn-danger {
-  background-color: #dc3545;
+  background-color: #f45151;
 }
 .ck-content .field--widget-paragraphs .field-add-more-submit,
 .ck-content .field--widget-entity-reference-paragraphs .field-add-more-submit {
@@ -11814,19 +11983,19 @@ a > .ck-content code {
 }
 .ck-content .region-title__action a.button {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #0d6efd;
-  --bs-btn-border-color: #0d6efd;
+  --bs-btn-bg: #32021f;
+  --bs-btn-border-color: #32021f;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: rgb(11.05, 93.5, 215.05);
-  --bs-btn-hover-border-color: rgb(10.4, 88, 202.4);
-  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-hover-bg: rgb(42.5, 1.7, 26.35);
+  --bs-btn-hover-border-color: rgb(40, 1.6, 24.8);
+  --bs-btn-focus-shadow-rgb: 81, 40, 65;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: rgb(10.4, 88, 202.4);
-  --bs-btn-active-border-color: rgb(9.75, 82.5, 189.75);
+  --bs-btn-active-bg: rgb(40, 1.6, 24.8);
+  --bs-btn-active-border-color: rgb(37.5, 1.5, 23.25);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #0d6efd;
-  --bs-btn-disabled-border-color: #0d6efd;
+  --bs-btn-disabled-bg: #32021f;
+  --bs-btn-disabled-border-color: #32021f;
 }
 .ck-content tr.region-title {
   --bs-table-bg: #f8f9fa;
@@ -12132,17 +12301,18 @@ a > .ck-content code {
 .ck-content code {
   overflow-y: auto;
 }
+.ck-content .slick-arrow::before {
+  color: var(--bs-primary) !important; /* Replace with your desired color (e.g., green, blue, etc.) */
+}
 .ck-content .bg-light {
   background-color: #e8ecff !important;
-}
-.ck-content .bg-secondary {
-  background-image: linear-gradient(rgb(249, 170, 139), rgb(196.2, 199.8, 203)) !important;
 }
 .ck-content h2 a, .ck-content .h2 a {
   text-decoration: none;
 }
-.ck-content .slick-dots {
-  bottom: -35px !important;
+.ck-content .bg-secondary {
+  background-image: linear-gradient(to bottom, rgb(109, 174, 105), rgba(109, 174, 105, 0.3));
+  background-image: linear-gradient(to bottom, var(--bs-primary), var(--bs-primary-bg-subtle));
 }
 
 /*# sourceMappingURL=ck5style.css.map */
