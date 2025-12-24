@@ -54,6 +54,7 @@
         "drupal/eca": "^2.1.4",
         "drupal/editoria11y": "^2.2",
         "drupal/entity_reference_revisions": "^1.12",
+        "drupal/entity_usage": "^2.0@beta",
         "drupal/ept_core": "^1.4",
         "drupal/exclude_node_title": "^2.0",
         "drupal/field_group": "^3.6 || ^4",
