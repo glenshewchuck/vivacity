@@ -44,3 +44,4 @@ web/sites/simpletest
 
 # Added by Glen
 .idea
+web/cms-20*sql.gz
