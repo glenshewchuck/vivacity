@@ -3,7 +3,7 @@
 //.text-dark { color: #000000 !important; }
 
 // Don't underline the node titles in views and such.
-h2 a {
+h2 a, h3 a {
   text-decoration: none;
 }
 

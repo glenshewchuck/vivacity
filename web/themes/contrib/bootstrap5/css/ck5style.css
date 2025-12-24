@@ -12307,7 +12307,7 @@ a > .ck-content code {
 .ck-content .bg-light {
   background-color: #e8ecff !important;
 }
-.ck-content h2 a, .ck-content .h2 a {
+.ck-content h2 a, .ck-content .h2 a, .ck-content h3 a, .ck-content .h3 a {
   text-decoration: none;
 }
 .ck-content .bg-secondary {
