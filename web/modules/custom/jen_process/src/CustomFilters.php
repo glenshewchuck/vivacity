@@ -26,8 +26,11 @@ class CustomFilters {
     }
 
     $media = Media::load($media_id);
+    if (is_null($media)) {
+      return 'Missing Media in short code. Edit this page and find the reference.';
+    }
     if (!$media && $media->hasField('field_media_image')) {
-      return '';
+      return 'Missing Media in short code. Edit this page and find the reference.';
     }
 
     $fid = $media->get('field_media_image')->entity->id();
