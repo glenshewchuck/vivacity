@@ -1,6 +1,6 @@
-uuid: e4192097-6913-424d-82a7-69eee73a1cb7
+uuid: 2124adf8-33a1-47d8-b156-36425a27be87
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.card
@@ -10,8 +10,8 @@ dependencies:
     - user
 _core:
   default_config_hash: KZYBlfIVZuXjvmTL28MLoopyltGJz2SvNa_uu8-9NxE
-id: taxonomy_term
-label: 'Taxonomy term'
+id: duplicate_of_taxonomy_term
+label: 'Original Taxonomy term'
 module: taxonomy
 description: 'Content belonging to a certain taxonomy term.'
 tag: default
