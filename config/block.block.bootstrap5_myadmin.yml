@@ -1,0 +1,25 @@
+uuid: fe2baff5-c7de-4c18-a018-575f92b76039
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.my-admin
+  module:
+    - system
+  theme:
+    - bootstrap5
+id: bootstrap5_myadmin
+theme: bootstrap5
+region: footer
+weight: -5
+provider: null
+plugin: 'system_menu_block:my-admin'
+settings:
+  id: 'system_menu_block:my-admin'
+  label: 'My Admin'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

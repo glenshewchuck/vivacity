@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - menu_ui
+    - node_revision_delete
     - scheduler
 third_party_settings:
   scheduler:
@@ -20,8 +21,26 @@ third_party_settings:
     unpublish_required: false
     unpublish_revision: true
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - main
+    parent: 'main:'
+  node_revision_delete:
+    amount:
+      status: true
+      settings:
+        amount: 5
+    created:
+      status: false
+      settings:
+        age: 1
+    drafts:
+      status: false
+      settings:
+        age: 1
+    only_drafts:
+      status: false
+      settings:
+        age: 0
 _core:
   default_config_hash: Ixr2YcecW3LZtBsnzOSlQ8yrZLbHvQ7u238jz1o-XME
 name: 'Person profile'

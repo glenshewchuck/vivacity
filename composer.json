@@ -78,6 +78,7 @@
         "drupal/media_entity_instagram": "^4.0",
         "drupal/menu_link_attributes": "^1.5",
         "drupal/metatag": "^2",
+        "drupal/node_revision_delete": "^2.0",
         "drupal/paragraphs": "^1.19",
         "drupal/pathauto": "^1.13",
         "drupal/project_browser": "^2.1-beta3",

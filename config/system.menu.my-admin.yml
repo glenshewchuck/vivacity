@@ -1,0 +1,8 @@
+uuid: 7ab68e8d-ecea-4094-bb57-3052e551a52f
+langcode: en
+status: true
+dependencies: {  }
+id: my-admin
+label: 'My Admin'
+description: 'Menu items that I use to develop'
+locked: false
