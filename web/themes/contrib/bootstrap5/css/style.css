@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* SCSS HEX */
+ul[data-block=nav_main] li.nav-item {
+  margin-right: 1rem;
+}
+
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors

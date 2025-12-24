@@ -121,6 +121,9 @@ $nav-color: tint-color($blue, 90%);
 $body-emphasis-color-dark: $indigo;
 //$navbar-light-color, $navbar-light-hover-color
 
+ul[data-block="nav_main"] li.nav-item {
+  margin-right: 1rem;
+}
 
 // -----------------------------------------------
 // Custom Theme Colors Added.
