@@ -18,6 +18,7 @@
     "require": {
         "composer/composer": "^2.8",
         "composer/installers": "^2.3",
+        "cweagans/composer-patches": "^2.0",
         "drupal/add_content_by_bundle": "^1.2.2",
         "drupal/address": "^2",
         "drupal/addtocal_augment": "^1.2.3",
@@ -128,17 +129,24 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "drupal/core-recipe-unpack": true,
-            "php-http/discovery": true,
-            "drupal/core-vendor-hardening": true
+            "drupal/core-vendor-hardening": true,
+            "php-http/discovery": true
         },
         "bin-dir": "vendor/bin",
         "sort-packages": true,
         "optimize-autoloader": true
     },
     "extra": {
+        "patches": {
+            "drupal/core": {
+                "Fix region undefined array key region": "https://www.drupal.org/files/issues/2024-10-29/undefined_index_region_field_layout-3053906-66.patch"
+            }
+        },
+        "enable-patching": true,
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"

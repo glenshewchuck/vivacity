@@ -1,0 +1,17 @@
+{
+    "_hash": "f074efb9a74ba6edc56ed011c65b99ab59fd8b2d5d301b97fcea308624449559",
+    "patches": {
+        "drupal/core": [
+            {
+                "package": "drupal/core",
+                "description": "Fix region undefined array key region",
+                "url": "https://www.drupal.org/files/issues/2024-10-29/undefined_index_region_field_layout-3053906-66.patch",
+                "sha256": "1a20bc73347c7621de423b1ee9b90fa9a28c3255e958815415b40c76c00e434a",
+                "depth": 2,
+                "extra": {
+                    "provenance": "root"
+                }
+            }
+        ]
+    }
+}
