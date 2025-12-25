@@ -25,39 +25,48 @@ class CustomFilters {
       return '';
     }
 
+    $render_media = true;
     $media = Media::load($media_id);
     if (is_null($media)) {
-      return 'Missing Media in short code. Edit this page and find the reference.';
+      $render_media = false;
     }
-    if (!$media && $media->hasField('field_media_image')) {
-      return 'Missing Media in short code. Edit this page and find the reference.';
+    if ($render_media && !$media && $media->hasField('field_media_image')) {
+      $render_media = false;
     }
 
-    $fid = $media->get('field_media_image')->entity->id();
-    $file = File::load($fid);
+
+    // Now render the image if we have one.
+    if (! $render_media) {
+	    $img_html = '';
+    } else {
+      $fid = $media->get('field_media_image')->entity->id();
+      $file = File::load($fid);
 //    $file_url = ImageStyle::load($image_style_name)->buildUrl($file->getFileUri());
+      $responsive_image_render_array = [
+        '#theme' => 'responsive_image',
+        '#responsive_image_style_id' => $responsive_image_style_id,
+        '#uri' => $file->getFileUri(),
+        '#alt' => $file->getFilename(),
+      ];
+      $responsive_image_render_array['#attributes']['class'] =
+        [ 'card-img-top', 'rounded-0', 'rounded-top'];
+      $img_html = \Drupal::service('renderer')->render($responsive_image_render_array);
+    }
 
-
-    $responsive_image_render_array = [
-      '#theme' => 'responsive_image',
-      '#responsive_image_style_id' => $responsive_image_style_id,
-      '#uri' => $file->getFileUri(),
-      '#alt' => $file->getFilename(),
-    ];
-    $responsive_image_render_array['#attributes']['class'] =
-      [ 'card-img-top', 'rounded-0', 'rounded-top'];
-
-    $img_html = \Drupal::service('renderer')->render($responsive_image_render_array);
-
+    if (empty($matches[7]) || empty($matches[6])) {
+      $render_button = '';
+    } else {
+      $render_button = '<a href="' . $matches[7] . '" class="btn btn-primary">' . $matches[6] . '</a>';
+    }
 
     $result =
 '<div class="card ' . $matches[8] . '" style="width: ' . $matches[1] . 'rem;">' .
     $img_html .
   '<div class="card-body">
     <h5 class="card-title">' . $matches[4] . '</h5>
-    <p class="card-text">' . $matches[5] . '</p>
-    <a href="' . $matches[7] . '" class="btn btn-primary">' . $matches[6] . '</a>
-  </div>
+    <p class="card-text">' . $matches[5] . '</p>' . 
+    $render_button .
+  '</div>
 </div>';
     return $result;
   }
