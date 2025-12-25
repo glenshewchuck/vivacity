@@ -13195,6 +13195,9 @@ h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a {
   margin-right: auto;
   margin-left: auto;
 }
+.webform-type-webform-booking .form-required::after {
+  content: none;
+}
 
 .bg-secondary {
   background-image: linear-gradient(to bottom, rgb(109, 174, 105), rgba(109, 174, 105, 0.3));

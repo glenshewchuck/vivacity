@@ -12328,6 +12328,9 @@ a > .ck-content code {
   margin-right: auto;
   margin-left: auto;
 }
+.ck-content .webform-type-webform-booking .form-required::after {
+  content: none;
+}
 .ck-content .bg-secondary {
   background-image: linear-gradient(to bottom, rgb(109, 174, 105), rgba(109, 174, 105, 0.3));
   background-image: linear-gradient(to bottom, var(--bs-primary), var(--bs-primary-bg-subtle));

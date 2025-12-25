@@ -44,6 +44,11 @@ h2 a, h3 a, h4 a {
     margin-right:auto;
     margin-left:auto;
   }
+
+  // Don't display the required asterisk.
+  .form-required::after {
+    content:none;
+  }
 }
 
 
