@@ -45,6 +45,11 @@ h2 a, h3 a, h4 a {
     margin-left:auto;
   }
 
+  // Center the input so it looks centered on the page.
+  input#selected-slot-booking_element {
+    text-align:center;
+  }
+
   // Don't display the required asterisk.
   .form-required::after {
     content:none;

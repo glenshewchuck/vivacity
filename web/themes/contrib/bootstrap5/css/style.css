@@ -13195,6 +13195,9 @@ h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a {
   margin-right: auto;
   margin-left: auto;
 }
+.webform-type-webform-booking input#selected-slot-booking_element {
+  text-align: center;
+}
 .webform-type-webform-booking .form-required::after {
   content: none;
 }
