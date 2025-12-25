@@ -13182,6 +13182,19 @@ h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a {
   text-decoration: none;
 }
 
+.webform-type-webform-booking #selected-slot-booking_element {
+  border: none;
+  background-color: transparent;
+}
+.webform-type-webform-booking input#selected-slot-booking_element,
+.webform-type-webform-booking label[for=selected-slot-booking_element] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .bg-secondary {
   background-image: linear-gradient(to bottom, rgb(109, 174, 105), rgba(109, 174, 105, 0.3));
   background-image: linear-gradient(to bottom, var(--bs-primary), var(--bs-primary-bg-subtle));

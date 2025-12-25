@@ -12315,6 +12315,18 @@ a > .ck-content code {
 .ck-content h2 a, .ck-content .h2 a, .ck-content h3 a, .ck-content .h3 a, .ck-content h4 a, .ck-content .h4 a {
   text-decoration: none;
 }
+.ck-content .webform-type-webform-booking #selected-slot-booking_element {
+  border: none;
+  background-color: transparent;
+}
+.ck-content .webform-type-webform-booking input#selected-slot-booking_element,
+.ck-content .webform-type-webform-booking label[for=selected-slot-booking_element] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
 .ck-content .bg-secondary {
   background-image: linear-gradient(to bottom, rgb(109, 174, 105), rgba(109, 174, 105, 0.3));
   background-image: linear-gradient(to bottom, var(--bs-primary), var(--bs-primary-bg-subtle));
