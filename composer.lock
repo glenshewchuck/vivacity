@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ec4dc62cda0bff4a93c01b9abbe04b2",
+    "content-hash": "d0103e2a46007ade7c13a45026368a51",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -9114,6 +9114,107 @@
                 "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
                 "docs": "https://www.drupal.org/docs/8/modules/webform",
                 "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
+            }
+        },
+        {
+            "name": "drupal/webform_booking",
+            "version": "1.1.11",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_booking.git",
+                "reference": "1.1.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_booking-1.1.11.zip",
+                "reference": "1.1.11",
+                "shasum": "6bfae768b3aee77c16d8402a8ec9991edd3a9f40"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11",
+                "drupal/webform": "^6.0",
+                "drupal/webform_ui": "*"
+            },
+            "require-dev": {
+                "drupal/webform": "*",
+                "drupal/webform_ui": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.1.11",
+                    "datestamp": "1763055699",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ricardo Marcelino",
+                    "homepage": "https://www.drupal.org/u/rfmarcelino"
+                }
+            ],
+            "description": "Allows to book a slot using a webform.",
+            "homepage": "http://drupal.org/project/webform_booking",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_booking",
+                "issues": "https://www.drupal.org/project/issues/webform_booking"
+            }
+        },
+        {
+            "name": "drupal/webform_ui",
+            "version": "6.3.0-beta6",
+            "require": {
+                "drupal/core": "^10.3 || ^11.0",
+                "drupal/webform": "*"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "6.3.0-beta6",
+                    "datestamp": "1764797531",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "danchadwick",
+                    "homepage": "https://www.drupal.org/user/504278"
+                },
+                {
+                    "name": "jrockowitz",
+                    "homepage": "https://www.drupal.org/user/371407"
+                },
+                {
+                    "name": "liam morland",
+                    "homepage": "https://www.drupal.org/user/493050"
+                },
+                {
+                    "name": "mandclu",
+                    "homepage": "https://www.drupal.org/user/52136"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                }
+            ],
+            "description": "Provides a user interface for building and maintaining webforms.",
+            "homepage": "https://www.drupal.org/project/webform",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform"
             }
         },
         {

@@ -112,6 +112,7 @@
         "drupal/twig_tweak": "^3.4",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/webform": "^6.3-beta1",
+        "drupal/webform_booking": "^1.1",
         "drupal/yoast_seo": "^2.1",
         "geocoder-php/nominatim-provider": "^5.7",
         "league/commonmark": "^2.4"

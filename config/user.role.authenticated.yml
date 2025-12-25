@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - dashboard.dashboard.welcome
+    - filter.format.webform_default
   module:
     - captcha
     - coffee
     - dashboard
     - file
+    - filter
     - fontawesome
     - honeypot
     - klaro
@@ -29,6 +31,7 @@ permissions:
   - 'delete own files'
   - 'skip CAPTCHA'
   - 'use klaro'
+  - 'use text format webform_default'
   - 'view media'
   - 'view own unpublished content'
   - 'view welcome dashboard'
