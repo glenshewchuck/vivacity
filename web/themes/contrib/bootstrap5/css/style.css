@@ -13187,7 +13187,7 @@ h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a {
   background-color: transparent;
 }
 .webform-type-webform-booking input#selected-slot-booking_element,
-.webform-type-webform-booking label[for=selected-slot-booking_element] {
+.webform-type-webform-booking label[for=edit-booking_element] {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

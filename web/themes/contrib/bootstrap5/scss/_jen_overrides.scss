@@ -35,7 +35,7 @@ h2 a, h3 a, h4 a {
 
   // Center the booking field.
   input#selected-slot-booking_element,
-  label[for="selected-slot-booking_element"] {
+  label[for="edit-booking_element"] {
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
