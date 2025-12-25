@@ -34,6 +34,8 @@ h2 a, h3 a, h4 a {
   }
 
   // Center the booking field.
+  // <label for="edit-booking-element" class="js-form-required form-required">You've Select a Call on</label>
+  label,
   input#selected-slot-booking_element,
   label[for="edit-booking_element"] {
     display:flex;

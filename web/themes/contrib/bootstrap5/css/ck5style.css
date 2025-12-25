@@ -12319,6 +12319,7 @@ a > .ck-content code {
   border: none;
   background-color: transparent;
 }
+.ck-content .webform-type-webform-booking label,
 .ck-content .webform-type-webform-booking input#selected-slot-booking_element,
 .ck-content .webform-type-webform-booking label[for=edit-booking_element] {
   display: flex;
