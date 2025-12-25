@@ -1,0 +1,119 @@
+uuid: 50d65817-b587-42de-a1cc-1f9eae833efd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.webform.field_additional_content
+    - field.field.node.webform.field_content
+    - field.field.node.webform.layout_builder__layout
+    - field.field.node.webform.webform
+    - node.type.webform
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - webform
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          cacbfe67-b02c-4bbf-98ef-08ade21d9f7c:
+            uuid: cacbfe67-b02c-4bbf-98ef-08ade21d9f7c
+            region: content
+            configuration:
+              id: 'field_block:node:webform:field_content'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          0ad18e1a-fe1f-4c7d-8d05-389913982b2c:
+            uuid: 0ad18e1a-fe1f-4c7d-8d05-389913982b2c
+            region: content
+            configuration:
+              id: 'field_block:node:webform:webform'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: webform_entity_reference_entity_view
+                label: hidden
+                settings:
+                  source_entity: true
+                  lazy: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          77a6c66b-711b-4293-aeb6-9b58f6eabbd5:
+            uuid: 77a6c66b-711b-4293-aeb6-9b58f6eabbd5
+            region: content
+            configuration:
+              id: 'extra_field_block:node:webform:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
+          968cf0d8-5e32-48de-b02c-a67be3f5d996:
+            uuid: 968cf0d8-5e32-48de-b02c-a67be3f5d996
+            region: content
+            configuration:
+              id: 'field_block:node:webform:field_additional_content'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.webform.default
+targetEntityType: node
+bundle: webform
+mode: default
+content:
+  field_additional_content:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  webform:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  layout_builder__layout: true

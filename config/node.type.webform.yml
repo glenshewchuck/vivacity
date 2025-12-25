@@ -2,9 +2,48 @@ uuid: 78943099-0795-4ba0-a37d-db0bf4863058
 langcode: en
 status: true
 dependencies:
+  module:
+    - menu_ui
+    - node_revision_delete
+    - scheduler
   enforced:
     module:
       - webform_node
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  node_revision_delete:
+    amount:
+      status: true
+      settings:
+        amount: 5
+    created:
+      status: false
+      settings:
+        age: 1
+    drafts:
+      status: false
+      settings:
+        age: 1
+    only_drafts:
+      status: false
+      settings:
+        age: 0
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
 _core:
   default_config_hash: kx0vLl7uYoivaJrFGjNZQpe4dC6fMZ-V-9mN_JWc2CI
 name: Webform
@@ -12,5 +51,5 @@ type: webform
 description: 'A basic page with a webform attached.'
 help: null
 new_revision: false
-preview_mode: 1
-display_submitted: true
+preview_mode: 0
+display_submitted: false

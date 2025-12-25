@@ -263,7 +263,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_entity_view
           settings:
-            view_mode: 3_2_small
+            view_mode: 3_2_medium
           group_column: target_id
           group_columns: {  }
           group_rows: true
