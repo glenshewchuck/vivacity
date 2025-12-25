@@ -1,52 +1,63 @@
-uuid: 981e2171-c6dd-4871-875f-6a1ef5cc9cc8
+uuid: 6a44d6c7-812a-4512-ab30-240aecc4b3f4
 langcode: en
 status: open
-dependencies:
-  enforced:
-    module:
-      - webform
-_core:
-  default_config_hash: _je-MWeeJB6gfm6iECiqjcyNetfMFbn-YIInYwZ1gIk
+dependencies: {  }
 weight: 0
 open: null
 close: null
-uid: null
+uid: 1
 template: false
 archive: false
-id: contact
-title: Contact
-description: 'Basic email contact webform.'
+id: booking
+title: Booking
+description: '<p>Booking Form</p>'
 categories: {  }
-elements: |
-  name:
-    '#title': 'Your Name'
-    '#type': textfield
-    '#required': true
-    '#default_value': '[current-user:display-name]'
-  email:
-    '#title': 'Your Email'
-    '#type': email
-    '#required': true
-    '#default_value': '[current-user:mail]'
-  subject:
-    '#title': Subject
-    '#type': textfield
-    '#required': true
-    '#test': 'Testing contact webform from [site:name]'
-  message:
-    '#title': Message
-    '#type': textarea
-    '#required': true
-    '#test': 'Please ignore this email.'
-  actions:
-    '#type': webform_actions
-    '#title': 'Submit button(s)'
-    '#submit__label': 'Send message'
+elements: |-
+  select_when_you_want_to_receive_a_call:
+    '#type': webform_wizard_page
+    '#title': 'Select Time'
+    '#open': true
+    booking_element:
+      '#type': webform_booking
+      '#title': "You've Select a Call on"
+      '#required': true
+      '#required_error': 'Please select a time'
+      '#time_interval': '10:00|13:00'
+      '#slot_duration': 20
+      '#days_advance': 1
+      '#days_visible': 20
+      '#excluded_weekdays':
+        Wed: Wed
+        Thu: Thu
+        Sat: Sat
+        Sun: Sun
+        Mon: 0
+        Tue: 0
+        Fri: 0
+      '#default_price': ''
+  your_email_page:
+    '#type': webform_wizard_page
+    '#title': 'Enter Email'
+    '#open': true
+    your_email:
+      '#type': email
+      '#title': 'Your email'
+      '#description': '<p>An email will be sent to this and you will need to confirm it.</p>'
+      '#required': true
+    actions:
+      '#type': webform_actions
+      '#title': 'Submit button(s)'
+      '#submit__label': 'Book It !'
+      '#reset_hide': true
+      '#update_hide': true
+      '#update__label': Update
+      '#delete_hide': false
+      '#delete__label': Cancel
 css: ''
 javascript: ''
 settings:
-  ajax: false
-  ajax_scroll_top: form
+  ajax: true
+  ajax_scroll_top: ''
   ajax_progress_type: ''
   ajax_effect: ''
   ajax_speed: null
@@ -55,7 +66,7 @@ settings:
   page_confirm_path: ''
   page_theme_name: ''
   form_title: source_entity_webform
-  form_submit_once: false
+  form_submit_once: true
   form_open_message: ''
   form_close_message: ''
   form_exception_message: ''
@@ -77,12 +88,13 @@ settings:
   form_required: false
   form_autofocus: false
   form_details_toggle: false
-  form_reset: false
+  form_reset: true
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_file_limit_message: ''
   form_attributes: {  }
   form_method: ''
   form_action: ''
@@ -146,10 +158,10 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: url_message
-  confirmation_url: '<front>'
+  confirmation_type: page
+  confirmation_url: ''
   confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
+  confirmation_message: '<p>You have successfully booked a consultation. Please check your email to verify your booking.</p>'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -161,8 +173,8 @@ settings:
   limit_total_interval: null
   limit_total_message: ''
   limit_total_unique: false
-  limit_user: null
-  limit_user_interval: null
+  limit_user: 10
+  limit_user_interval: 3600
   limit_user_message: ''
   limit_user_unique: false
   entity_limit_total: null
@@ -174,9 +186,9 @@ settings:
   results_disabled: false
   results_disabled_ignore: false
   results_customize: false
-  token_view: false
+  token_view: true
   token_update: false
-  token_delete: false
+  token_delete: true
   serial_disabled: false
 access:
   create:
@@ -210,7 +222,9 @@ access:
     users: {  }
     permissions: {  }
   delete_own:
-    roles: {  }
+    roles:
+      - anonymous
+      - authenticated
     users: {  }
     permissions: {  }
   administer:
@@ -226,18 +240,18 @@ access:
     users: {  }
     permissions: {  }
 handlers:
-  email_confirmation:
+  email:
     id: email
-    handler_id: email_confirmation
-    label: 'Email confirmation'
+    handler_id: email
+    label: Email
     notes: ''
     status: true
     conditions: {  }
-    weight: 1
+    weight: 0
     settings:
       states:
         - completed
-      to_mail: '[current-user:mail]'
+      to_mail: _default
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -250,46 +264,8 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: true
-      attachments: false
-      twig: false
-      theme_name: ''
-      langcode: ''
-      parameters: {  }
-      debug: false
-  email_notification:
-    id: email
-    handler_id: email_notification
-    label: 'Email notification'
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 2
-    settings:
-      states:
-        - completed
-      to_mail: _default
-      to_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      from_mail: '[webform_submission:values:email:raw]'
-      from_options: {  }
-      from_name: '[webform_submission:values:name:raw]'
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
+      subject: _default
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

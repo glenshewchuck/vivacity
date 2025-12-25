@@ -27,6 +27,8 @@ dependencies:
     - scheduler
     - system
     - trash
+    - webform_booking
+    - webform_submission_log
 _core:
   default_config_hash: g-zSnaBXJnH7VoimReFb6KcLjIgHCU-hisiShtZ9hjQ
 id: content_editor
@@ -40,9 +42,11 @@ permissions:
   - 'access media overview'
   - 'access navigation'
   - 'access trash'
+  - 'access webform submission log'
   - 'administer menu'
   - 'administer redirects'
   - 'administer url aliases'
+  - 'cancel all webform bookings'
   - 'create blog content'
   - 'create case_study content'
   - 'create document media'

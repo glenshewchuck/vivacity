@@ -6,6 +6,7 @@ dependencies:
     - klaro
     - media
     - system
+    - webform
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
@@ -16,3 +17,4 @@ permissions:
   - 'access content'
   - 'use klaro'
   - 'view media'
+  - 'view own webform submission'
