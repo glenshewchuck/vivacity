@@ -43,7 +43,7 @@ third_party_settings:
         age: 0
 _core:
   default_config_hash: Ixr2YcecW3LZtBsnzOSlQ8yrZLbHvQ7u238jz1o-XME
-name: 'Person profile'
+name: Person
 type: person
 description: 'Person profile content provides information about a person.'
 help: null

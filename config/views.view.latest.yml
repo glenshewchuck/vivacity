@@ -4,7 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.card
+    - node.type.case_study
+    - node.type.news
     - node.type.page
+    - node.type.test
   module:
     - node
     - user
@@ -139,6 +142,9 @@ display:
           operator: 'not in'
           value:
             page: page
+            case_study: case_study
+            news: news
+            test: test
           group: 1
           exposed: false
           expose:

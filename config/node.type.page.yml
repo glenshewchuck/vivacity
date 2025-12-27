@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - menu_ui
+    - node_revision_delete
     - scheduler
 third_party_settings:
   scheduler:
@@ -24,9 +25,26 @@ third_party_settings:
       - main
       - my-admin
     parent: 'main:'
+  node_revision_delete:
+    amount:
+      status: true
+      settings:
+        amount: 5
+    created:
+      status: false
+      settings:
+        age: 1
+    drafts:
+      status: false
+      settings:
+        age: 1
+    only_drafts:
+      status: false
+      settings:
+        age: 0
 _core:
   default_config_hash: ofBTVP5AmqIoiRQxuySnBpPvyzCT2nG0UVvuAZaGt3g
-name: 'Basic page'
+name: 'Basic Page'
 type: page
 description: "Use <em>basic pages</em> for your static content, such as an 'About us' page."
 help: null

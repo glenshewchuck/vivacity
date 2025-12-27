@@ -1,0 +1,29 @@
+uuid: fa52e382-d45c-45c4-a0be-1c9e2b66e729
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recent_content
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap5
+id: bootstrap5_views_block__recent_content_block_recent_content
+theme: bootstrap5
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:recent_content-block_recent_content'
+settings:
+  id: 'views_block:recent_content-block_recent_content'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'

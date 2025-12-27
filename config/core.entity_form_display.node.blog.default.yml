@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.blog.field_featured_image
     - field.field.node.blog.field_tags
     - node.type.blog
+    - workflows.workflow.basic_editorial
   module:
     - content_moderation
     - field_layout
@@ -15,6 +16,7 @@ dependencies:
     - media_library
     - path
     - scheduler
+    - scheduler_content_moderation_integration
     - tagify
     - text
 third_party_settings:
@@ -92,6 +94,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  publish_state:
+    type: scheduler_moderation
+    weight: 53
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   publish_status:
     type: scheduler_moderation
     weight: -4
@@ -146,11 +154,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  unpublish_state:
+    type: scheduler_moderation
+    weight: 55
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   url_redirects:
     weight: 50
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  publish_state: true
-  unpublish_state: true
+hidden: {  }

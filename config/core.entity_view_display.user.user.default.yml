@@ -2,12 +2,31 @@ uuid: cd50e841-a93a-4ec5-9ffd-c23f6c711700
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_last_name
   module:
     - user
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
-content: {  }
+content:
+  masquerade:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  member_for:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  realname:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
-  member_for: true
+  field_first_name: true
+  field_last_name: true

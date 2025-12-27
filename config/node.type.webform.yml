@@ -46,7 +46,7 @@ third_party_settings:
     unpublish_revision: false
 _core:
   default_config_hash: kx0vLl7uYoivaJrFGjNZQpe4dC6fMZ-V-9mN_JWc2CI
-name: Webform
+name: Form
 type: webform
 description: 'A basic page with a webform attached.'
 help: null
