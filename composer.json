@@ -81,6 +81,7 @@
         "drupal/menu_admin_per_menu": "^1.7",
         "drupal/menu_link_attributes": "^1.5",
         "drupal/metatag": "^2",
+        "drupal/node_read_time": "1.x-dev@dev",
         "drupal/node_revision_delete": "^2.0",
         "drupal/paragraphs": "^1.19",
         "drupal/pathauto": "^1.13",

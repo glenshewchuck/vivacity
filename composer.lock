@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "313afaac5f0fbb8da7960c4f83ee2e1e",
+    "content-hash": "760c9ddbff35d0e38834fdbe57adb369",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7099,6 +7099,55 @@
             "support": {
                 "source": "https://drupal.org/project/modeler_api",
                 "issues": "https://drupal.org/project/issues/modeler_api"
+            }
+        },
+        {
+            "name": "drupal/node_read_time",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/node_read_time.git",
+                "reference": "78954e47e5b897910e3bfdb46b776ae0b579bff3"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.15+6-dev",
+                    "datestamp": "1759223076",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "artamiel",
+                    "homepage": "https://www.drupal.org/user/3539472"
+                },
+                {
+                    "name": "astonvictor",
+                    "homepage": "https://www.drupal.org/user/3466615"
+                },
+                {
+                    "name": "yivanov",
+                    "homepage": "https://www.drupal.org/user/3513564"
+                }
+            ],
+            "description": "Displays reading time field on a node.",
+            "homepage": "https://www.drupal.org/project/node_read_time",
+            "support": {
+                "source": "https://git.drupalcode.org/project/node_read_time"
             }
         },
         {
@@ -16785,6 +16834,7 @@
         "drupal/ckeditor_font": 10,
         "drupal/customfilter": 20,
         "drupal/entity_usage": 10,
+        "drupal/node_read_time": 20,
         "drupal/recipe_installer_kit": 15,
         "drupal/viewsreference": 10
     },
