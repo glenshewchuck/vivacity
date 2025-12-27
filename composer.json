@@ -78,6 +78,7 @@
         "drupal/mailsystem": "^4",
         "drupal/masquerade": "^2.0",
         "drupal/media_entity_instagram": "^4.0",
+        "drupal/menu_admin_per_menu": "^1.7",
         "drupal/menu_link_attributes": "^1.5",
         "drupal/metatag": "^2",
         "drupal/node_revision_delete": "^2.0",
