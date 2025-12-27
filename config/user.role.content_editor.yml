@@ -3,22 +3,30 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.node.page.default
+    - core.entity_view_display.node.webform.default
     - filter.format.content_format
     - media.type.document
     - media.type.image
+    - media.type.instagram
     - media.type.remote_video
     - media.type.svg_image
     - node.type.blog
-    - node.type.case_study
-    - node.type.news
     - node.type.page
     - node.type.person
+    - node.type.webform
+    - taxonomy.vocabulary.category
+    - taxonomy.vocabulary.tags
     - workflows.workflow.basic_editorial
   module:
     - content_moderation
     - contextual
+    - draggableviews
+    - entity_usage
+    - exclude_node_title
     - file
     - filter
+    - layout_builder
     - media
     - navigation
     - node
@@ -26,8 +34,11 @@ dependencies:
     - redirect
     - scheduler
     - system
+    - taxonomy
     - trash
+    - webform
     - webform_booking
+    - webform_node
     - webform_submission_log
 _core:
   default_config_hash: g-zSnaBXJnH7VoimReFb6KcLjIgHCU-hisiShtZ9hjQ
@@ -39,57 +50,142 @@ permissions:
   - 'access administration pages'
   - 'access content overview'
   - 'access contextual links'
+  - 'access draggableviews'
+  - 'access entity usage statistics'
   - 'access media overview'
   - 'access navigation'
+  - 'access own webform configuration'
+  - 'access taxonomy overview'
   - 'access trash'
+  - 'access webform help'
+  - 'access webform overview'
   - 'access webform submission log'
+  - 'access webform submission user'
   - 'administer menu'
   - 'administer redirects'
   - 'administer url aliases'
+  - 'administer webform submission'
   - 'cancel all webform bookings'
+  - 'change own username'
+  - 'configure editable page node layout overrides'
+  - 'configure editable webform node layout overrides'
+  - 'create and edit custom blocks'
   - 'create blog content'
-  - 'create case_study content'
   - 'create document media'
   - 'create image media'
-  - 'create news content'
+  - 'create media'
   - 'create page content'
   - 'create person content'
   - 'create remote_video media'
   - 'create svg_image media'
+  - 'create terms in category'
+  - 'create terms in tags'
   - 'create url aliases'
+  - 'create webform'
+  - 'create webform content'
+  - 'delete all revisions'
+  - 'delete all taxonomy revisions'
   - 'delete any blog content'
-  - 'delete any case_study content'
   - 'delete any document media'
+  - 'delete any document media revisions'
   - 'delete any image media'
-  - 'delete any news content'
+  - 'delete any image media revisions'
+  - 'delete any instagram media revisions'
+  - 'delete any media'
   - 'delete any page content'
   - 'delete any person content'
   - 'delete any remote_video media'
+  - 'delete any remote_video media revisions'
   - 'delete any svg_image media'
+  - 'delete any webform'
+  - 'delete any webform content'
+  - 'delete any webform submission'
   - 'delete blog revisions'
-  - 'delete case_study revisions'
-  - 'delete news revisions'
+  - 'delete media'
+  - 'delete own blog content'
+  - 'delete own document media'
   - 'delete own files'
+  - 'delete own image media'
+  - 'delete own page content'
+  - 'delete own person content'
+  - 'delete own remote_video media'
+  - 'delete own svg_image media'
+  - 'delete own webform'
+  - 'delete own webform content'
+  - 'delete own webform submission'
   - 'delete page revisions'
   - 'delete person revisions'
+  - 'delete term revisions in category'
+  - 'delete term revisions in tags'
+  - 'delete terms in category'
+  - 'delete terms in tags'
+  - 'delete webform revisions'
+  - 'delete webform submissions any node'
   - 'edit any blog content'
-  - 'edit any case_study content'
   - 'edit any document media'
   - 'edit any image media'
-  - 'edit any news content'
   - 'edit any page content'
   - 'edit any person content'
   - 'edit any remote_video media'
   - 'edit any svg_image media'
+  - 'edit any webform'
+  - 'edit any webform content'
+  - 'edit any webform submission'
+  - 'edit own blog content'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own page content'
+  - 'edit own person content'
+  - 'edit own remote_video media'
+  - 'edit own svg_image media'
+  - 'edit own webform'
+  - 'edit own webform content'
+  - 'edit own webform submission'
+  - 'edit terms in category'
+  - 'edit terms in tags'
+  - 'edit webform submissions any node'
+  - 'exclude any node title'
+  - 'exclude own node title'
+  - 'manage webform booking'
+  - 'restore node entities'
   - 'revert all revisions'
+  - 'revert all taxonomy revisions'
+  - 'revert any document media revisions'
+  - 'revert any image media revisions'
+  - 'revert any remote_video media revisions'
+  - 'revert any svg_image media revisions'
+  - 'revert blog revisions'
+  - 'revert page revisions'
+  - 'revert person revisions'
+  - 'revert term revisions in category'
+  - 'revert term revisions in tags'
+  - 'revert webform revisions'
   - 'schedule publishing of nodes'
+  - 'update any media'
+  - 'update media'
   - 'use basic_editorial transition create_new_draft'
   - 'use basic_editorial transition publish'
   - 'use basic_editorial transition unpublish'
   - 'use text format content_format'
+  - 'view all media revisions'
   - 'view all revisions'
+  - 'view all taxonomy revisions'
+  - 'view any document media revisions'
+  - 'view any image media revisions'
+  - 'view any remote_video media revisions'
+  - 'view any svg_image media revisions'
   - 'view any unpublished content'
+  - 'view any webform submission'
+  - 'view blog revisions'
   - 'view own unpublished content'
   - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view person revisions'
   - 'view scheduled content'
+  - 'view term revisions in category'
+  - 'view term revisions in tags'
   - 'view the administration theme'
+  - 'view vocabulary labels'
+  - 'view webform booking input'
+  - 'view webform revisions'
+  - 'view webform submissions any node'
